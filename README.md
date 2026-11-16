@@ -115,7 +115,7 @@ Subjek: **Masjid Istiqlal, Jakarta**. Denah `myplan.json` ditelusuri manual dari
 1. **raster.mjs -- bias top-left.** Bias `-1` pada listing hanya benar bila E bilangan bulat. Dengan sample-centre E bisa
    0,5 (persegi panjang 7x4 dipecah diagonal: pixel (4,2) di dalam T1 dengan E=0,5 ditolak bias -1 -> celah). Bias dibaca
    sebagai satu satuan terkecil (`BIAS_UNIT`): edge non-top/left menuntut E>0, top/left cukup E>=0. Contoh modul tidak
-   berubah (36/0/0, 30/6/0, 30/0/6; `ref/` identik). Pada siluet denah ini: 3 pixel celah -> 0. `legacyBias:true` = perilaku lama.
+   berubah (36/0/0, 30/6/0, 30/0/6; `ref/` identik). Pada siluet denah ini: 5 pixel celah -> 0. `legacyBias:true` = perilaku lama.
 2. **raster.mjs -- opsi `clamp` dan `autoFlip`** pada `triangle()` (pitfall 13.5 dan 13.4), default tidak mengubah perilaku.
 3. **plan.mjs -- triangulasi ear-clipping** menggantikan fan dari p[0] (fan hanya benar untuk bentuk konveks).
 4. **web/viewer.mjs -- `side: THREE.DoubleSide`.** Kamera ortografik y-ke-bawah memantulkan winding sehingga siluet
@@ -129,4 +129,8 @@ Subjek: **Masjid Istiqlal, Jakarta**. Denah `myplan.json` ditelusuri manual dari
 - From-scratch vs Three.js (`compare.mjs`): 98,95% identik, **PSNR 33,0 dB, SSIM 0,998**; seluruh pixel yang beda ada di tepi, 0 di interior.
 
 ## Verified
-(isi setelah clone bersih di laptop sendiri: tanggal, OS, versi Node, `npm test` hijau, URL GitHub Pages)
+Clone bersih diuji pada 16 November 2026 di Windows 10 Pro 22H2, Node v22.20.0.
+- `git clone` -> `npm install` (68 paket, 0 vulnerabilities) -> `npm test`: tests.mjs 10 ok, tests_lab.mjs 12 ok, 0 gagal.
+- `npx serve web` berjalan di http://localhost:3000.
+- GitHub Pages: https://khoirulanam002.github.io/tugas-grafkom-modul2/
+- Tes ke-13 (PSNR vs Three.js) dilewati di clone bersih karena `plan_three.ppm` di-gitignore. Di mesinku hasilnya PSNR 33,0 dB.
