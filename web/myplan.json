@@ -1,0 +1,258 @@
+{
+ "name": "Masjid Istiqlal Jakarta -- denah ditelusuri dari citra satelit (subjek penilaian)",
+ "units": "metres",
+ "note": "y is UP in this file (survey convention); plan.mjs flips it to screen y-down. Ditelusuri manual dari screenshot Google Maps (satelit), diakses 25 Oktober 2026; skala 0,632 m/pixel dari garis ukur 283,47 m. Akurasi kira-kira beberapa meter; pintu_masuk_perkiraan belum diverifikasi. Imagery (c) Google.",
+ "scale_px_per_m": 2.2,
+ "origin_m": [
+  10,
+  8
+ ],
+ "polylines": [
+  {
+   "id": "dinding_luar",
+   "category": "wall",
+   "closed": true,
+   "points": [ [
+     35.39,
+     255.97
+    ], [
+     130.19,
+     220.57
+    ], [
+     157.37,
+     149.79
+    ], [
+     196.56,
+     96.7
+    ], [
+     127.03,
+     4.42
+    ], [
+     117.55,
+     0
+    ], [
+     0.63,
+     107.44
+    ], [
+     0,
+     161.16
+    ]
+   ]
+  },
+  {
+   "id": "ruang_salat_utama",
+   "category": "cella",
+   "closed": true,
+   "points": [ [
+     35.39,
+     255.97
+    ], [
+     130.19,
+     220.57
+    ], [
+     94.8,
+     125.77
+    ], [
+     0,
+     161.16
+    ]
+   ]
+  },
+  {
+   "id": "kubah",
+   "category": "cella",
+   "closed": true,
+   "points": [ [
+     80.9,
+     190.87
+    ], [
+     79.7,
+     184.82
+    ], [
+     76.27,
+     179.7
+    ], [
+     71.14,
+     176.27
+    ], [
+     65.1,
+     175.07
+    ], [
+     59.05,
+     176.27
+    ], [
+     53.92,
+     179.7
+    ], [
+     50.5,
+     184.82
+    ], [
+     49.3,
+     190.87
+    ], [
+     50.5,
+     196.91
+    ], [
+     53.92,
+     202.04
+    ], [
+     59.05,
+     205.47
+    ], [
+     65.1,
+     206.67
+    ], [
+     71.14,
+     205.47
+    ], [
+     76.27,
+     202.04
+    ], [
+     79.7,
+     196.91
+    ]
+   ]
+  },
+  {
+   "id": "halaman_besar",
+   "category": "wall",
+   "closed": true,
+   "points": [ [
+     140.94,
+     121.98
+    ], [
+     173.17,
+     97.96
+    ], [
+     127.03,
+     41.08
+    ], [
+     98.59,
+     31.6
+    ], [
+     103.02,
+     110.6
+    ]
+   ]
+  },
+  {
+   "id": "halaman_kecil",
+   "category": "wall",
+   "closed": true,
+   "points": [ [
+     25.91,
+     129.56
+    ], [
+     73.31,
+     110.6
+    ], [
+     54.35,
+     75.84
+    ], [
+     13.27,
+     101.12
+    ]
+   ]
+  },
+  {
+   "id": "pembagi_interior",
+   "category": "wall",
+   "closed": false,
+   "points": [ [
+     0,
+     161.16
+    ], [
+     94.8,
+     125.77
+    ]
+   ]
+  },
+  {
+   "id": "pintu_masuk_perkiraan",
+   "category": "stair",
+   "closed": false,
+   "points": [ [
+     54.35,
+     58.78
+    ], [
+     66.99,
+     46.14
+    ]
+   ]
+  },
+  {
+   "id": "menara",
+   "category": "shrine",
+   "closed": true,
+   "points": [ [
+     85.95,
+     178.86
+    ], [
+     85.03,
+     176.63
+    ], [
+     82.79,
+     175.7
+    ], [
+     80.56,
+     176.63
+    ], [
+     79.63,
+     178.86
+    ], [
+     80.56,
+     181.09
+    ], [
+     82.79,
+     182.02
+    ], [
+     85.03,
+     181.09
+    ]
+   ]
+  },
+  {
+   "id": "sumbu_kiblat",
+   "category": "axis",
+   "closed": false,
+   "points": [ [
+     65.1,
+     190.87
+    ], [
+     2.09,
+     220.25
+    ]
+   ]
+  }
+ ],
+ "silhouette": {
+  "id": "footprint",
+  "category": "wall",
+  "points": [ [
+    35.39,
+    255.97
+   ], [
+    130.19,
+    220.57
+   ], [
+    157.37,
+    149.79
+   ], [
+    196.56,
+    96.7
+   ], [
+    127.03,
+    4.42
+   ], [
+    117.55,
+    0
+   ], [
+    0.63,
+    107.44
+   ], [
+    0,
+    161.16
+   ]
+  ]
+ }
+}
